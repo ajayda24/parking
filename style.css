@@ -2,7 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-color: #181d31;
+  --secondary-color-bold: #e6ddc4;
+  --secondary-color-thin: #f0e9d2;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
 .absolute-center {
   position: absolute;
   transform: translateX(-50%, -50%);
+}
+
+@media only screen and (min-width: 600px) {
+  .App {
+    width: 25rem;
+  }
+}
+.App {
+  background-color: rgba(215, 217, 221, 0.541);
+  margin: auto;
+  min-height: 100vh;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1px;
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover::-webkit-scrollbar {
+  width: 1px;
 }

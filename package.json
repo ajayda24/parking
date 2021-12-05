@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently --kill-others \"npx tailwindcss -i ./style.css -o ./tailwind.css -w\" \"next dev \"",
+    "dev:nocss": "next dev",
     "build": "concurrently \"npx tailwindcss -i ./style.css -o ./tailwind.css --minify\" \"next build\"",
     "start": "next start",
     "lint": "next lint"
