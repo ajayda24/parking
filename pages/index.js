@@ -1,76 +1,96 @@
 export default function Home() {
   return (
-    <div className='App relative flex flex-col'>
-      {/* Header */}
-      <div className='flex justify-between bg-my-p min-w-full py-4 px-4 gap-3 rounded-b-xl'>
-        <div className='flex gap-3'>
-          <span className='material-icons text-my-s-thin'>drive_eta</span>
-          <p className='text-my-s-thin'>Eternal Parking</p>
-        </div>
-        <span className='material-icons text-my-s-thin'>menu</span>
-      </div>
+    <div className=' relative flex flex-col justify-between'>
       {/* Map */}
-      <div className='flex flex-col h-64'>
-        <div className='flex mx-auto my-4'>
-          <h3 className='text-my-p font-bold'>Nearest Parking Place</h3>
-          <span className='material-icons-outlined text-my-p'>location_on</span>
-        </div>
+      <div className='flex gap-3 flex-col mb-2 p-2'>
+        {/* <div className='flex mx-auto my-2'>
+            <h3 className='text-my-p font-bold'>Nearest Parking Place</h3>
+            <span className='material-icons-outlined text-my-p'>
+              location_on
+            </span>
+          </div> */}
+        <center>
+          <img
+            src='https://wptutsplus.s3.amazonaws.com/310_Give_Your_Customers_Driving_Directions_With_the_Google_Maps_API/wordpress-map-map.jpg'
+            alt=''
+            // className='max-w-none w-60'
+          />
+        </center>
       </div>
       {/* List Places */}
-      <div className='flex flex-col gap-1 p-1 px-2 overflow-y-auto max-h-80'>
-        <div className='flex justify-between py-6 px-3 bg-my-p rounded-lg'>
+      <div className='flex flex-row gap-1 p-1 px-2 overflow-x-scroll md:justify-center'>
+        <div className='flex flex-col gap-3 justify-between py-6 px-3 bg-my-p bg-opacity-90 rounded-lg'>
           <p className='text-my-s-thin'>Place A</p>
+          <img
+            src='https://picsum.photos/300/200?random=1'
+            alt=''
+            className='max-w-none w-52'
+          />
           <div className='flex gap-3 text-my-s-thin'>
             <span className='material-icons-outlined'>near_me</span>
             <span className='material-icons-outlined'>local_parking</span>
             <span className='material-icons-outlined'>bolt</span>
           </div>
         </div>
-        <div className='flex justify-between py-6 px-3 bg-my-p rounded-lg'>
+        <div className='flex flex-col gap-3 justify-between py-6 px-3 bg-my-p bg-opacity-90 rounded-lg'>
           <p className='text-my-s-thin'>Place B</p>
+          <img
+            src='https://picsum.photos/300/200?random=2'
+            alt=''
+            className='max-w-none w-52'
+          />
           <div className='flex gap-3 text-my-s-thin'>
             <span className='material-icons-outlined'>near_me</span>
             <span className='material-icons-outlined'>local_parking</span>
             <span className='material-icons-outlined'>bolt</span>
           </div>
         </div>
-        <div className='flex justify-between py-6 px-3 bg-my-p rounded-lg'>
+        <div className='flex flex-col gap-3 justify-between py-6 px-3 bg-my-p bg-opacity-90 rounded-lg'>
           <p className='text-my-s-thin'>Place C</p>
+          <img
+            src='https://picsum.photos/300/200?random=3'
+            alt=''
+            className='max-w-none w-52'
+          />
           <div className='flex gap-3 text-my-s-thin'>
             <span className='material-icons-outlined'>near_me</span>
             <span className='material-icons-outlined'>local_parking</span>
             <span className='material-icons-outlined'>bolt</span>
           </div>
         </div>
-        <div className='flex justify-between py-6 px-3 bg-my-p rounded-lg'>
+        <div className='flex flex-col gap-3 justify-between py-6 px-3 bg-my-p bg-opacity-90 rounded-lg'>
           <p className='text-my-s-thin'>Place D</p>
+          <img
+            src='https://picsum.photos/300/200?random=4'
+            alt=''
+            className='max-w-none w-52'
+          />
           <div className='flex gap-3 text-my-s-thin'>
             <span className='material-icons-outlined'>near_me</span>
             <span className='material-icons-outlined'>local_parking</span>
             <span className='material-icons-outlined'>bolt</span>
           </div>
         </div>
-        <div className='flex justify-between py-6 px-3 bg-my-p rounded-lg'>
+        <div className='flex flex-col gap-3 justify-between py-6 px-3 bg-my-p bg-opacity-90 rounded-lg'>
           <p className='text-my-s-thin'>Place E</p>
+          <img
+            src='https://picsum.photos/300/200?random=5'
+            alt=''
+            className='max-w-none w-48'
+          />
           <div className='flex gap-3 text-my-s-thin'>
             <span className='material-icons-outlined'>near_me</span>
             <span className='material-icons-outlined'>local_parking</span>
             <span className='material-icons-outlined'>bolt</span>
           </div>
         </div>
-        <div className='flex flex-wrap-reverse p-2 justify-between gap-2 mb-6 sm:mb-14'>
-          <button className='btn text-my-s-thin'>Search by District</button>
-          <button className='btn text-my-s-thin'>View More</button>
-        </div>
       </div>
-      {/* Footer */}
-      <div className='flex justify-between bg-my-p min-w-full py-5 px-4 gap-3 rounded-t-xl absolute bottom-0 text-my-s-thin'>
-        <span className='material-icons-outlined'>home</span>
-        <span className='material-icons-outlined'>explore</span>
-        <span className='material-icons-outlined'>location_searching</span>
-        <span className='material-icons-outlined'>person_pin_circle</span>
-        <span className='material-icons-outlined'>contact_support</span>
-      </div>
+      {/* <div className='flex flex-wrap-reverse p-2 justify-between gap-2 mb-6 sm:mb-14'>
+          <button className='btn flex-1 text-my-s-thin'>
+            Search by District
+          </button>
+          <button className='btn flex-1 text-my-s-thin'>View More</button>
+        </div> */}
     </div>
   )
 }

@@ -1,6 +1,6 @@
 {
-  "short_name": "Place for Park",
-  "name": "Place for Park",
+  "short_name": "Parkigo",
+  "name": "Parkigo",
   "description": "This app helps you to find places to park your vehicle nearby your location with full security and other features.",
   "icons": [
     {
@@ -17,7 +17,7 @@
   ],
   "start_url": "/",
   "background_color": "#FFFFFF",
-  "display": "standalone",
+  "display": "fullscreen",
   "scope": "/",
   "theme_color": "#000000",
   "orientation": "portrait"

@@ -5,9 +5,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'my-p': 'var(--primary-color)',
-        'my-s-bold': 'var(--secondary-color-bold)',
-        'my-s-thin': 'var(--secondary-color-thin)',
+        'my-p': '#181d31',
+        'my-s-bold': '#e6ddc4',
+        'my-s-thin': '#f0e9d2',
       },
     },
   },
